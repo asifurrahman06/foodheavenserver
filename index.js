@@ -16,7 +16,7 @@ app.use(express.json());
 
 async function connectToMongoDB() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/FoodHaven", {
+    await mongoose.connect("mongodb+srv://asifurrahman06:1234@cluster0.er4ejgz.mongodb.net/FoodHeaven", {
       useNewUrlParser: true,
     });
     console.log("Connected to MongoDB");
